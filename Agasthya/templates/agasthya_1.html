@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/aga.css">
+    <title>Review</title>
+    
+  
+</head>
+
+<body>
+    <h1>Results</h1>
+
+    <div class="center">
+        <center><table border="1"></center>
+
+            <tr>
+                
+                <th>client_name</th>
+                <th>contact</th>
+                <th>Service_Enquired</th>
+                <th>Location</th>
+                <th>Building_Apartment_Name</th>
+                <th>Date_of_Enquiry</th>
+                <th>Estimated_Quote</th>
+                <th>Invoice_Amount</th>
+                <th>Profit</th>
+               
+            </tr>
+
+            {% for review in reviews %}
+
+            <tr>
+                <td> {{review['client_name']}} </td>
+                <td>{{review['contact']}}</td>
+                <td>{{review['Service_Enquired']}} </td>
+                <td>{{review['Location']}} </td>
+                <td>{{review['Building_Apartment_Name']}} </td>
+                <td>{{review['Date_of_Enquiry']}} </td>
+                <td>{{review['Estimated_Quote']}} </td>
+                <td>{{review['Invoice_Amount']}} </td>
+                <th>{{review['Profit']}}</th>
+                
+                
+            </tr>
+            
+            {% endfor %}
+            <br><br>
+        </table><br><br><br>
+
+        <a href="/review1" class="button">SHOW DATABASE</a><br><br><br>
+
+        <div class="form">
+
+            <form action="/review2" method="POST">
+                
+                <input type="text" name="contact" id="content" placeholder="Enter URL Here" autofocus><br><br>
+                <input type="submit" name="search" id="button">
+
+            </form>
+
+        </div>
+
+    </div>
+</body>
+
+</html>

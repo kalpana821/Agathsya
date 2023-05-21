@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="/static/scrap.css">
+	<title>Kalpana</title>
+	
+</head>
+<body bgcolor="pink">
+	<center><h1>PROJECT</h1></center>
+	<form action="/review" method="POST">
+		
+	    <table border="0" cellpadding="2" cellspacing="20" height="40" width="90">
+             <tr>
+     	         <td>client_name</td> 
+                 <td><input type="text" name="client_name" size="30" maxlength="20" value=""> </td>
+                 <td>contact</td>
+                <td><input type="text" name="contact" size="30" maxlength="20" value=""></td> 
+	         </tr>
+	       <tr> 
+		       <td>Service_Enquired</td>
+		       <td><input type="text" name="Service_Enquired" size="10" maxlength="10" value=""></td>
+	        </tr>
+
+	       <tr>
+		        <td>Location</td>
+		        <td><input type="text" name="Location" size="30" maxlength="40" value=""> </td>
+	        </tr>
+
+            <tr>
+		        <td>Building_Apartment_Name</td>
+		        <td><input type="text" name="Building_Apartment_Name" size="30" maxlength="40" value=""> </td>
+	        </tr>
+
+            <tr>
+		        <td>Date_of_Enquiry</td>
+		        <td><input type="text" name="Date_of_Enquiry" size="30" maxlength="40"  value=""> </td>
+	        </tr>
+            <tr>
+		        <td>Estimated_Quote</td>
+		        <td><input type="text" name="Estimated_Quote" size="30" maxlength="40"  value=""> </td>
+	        </tr>
+            <tr>
+		        <td>Invoice_Amount</td>
+		        <td><input type="text" name="Invoice_Amount" size="30" maxlength="40"  value=""> </td>
+	        </tr>
+            <tr>
+		        <td>Profit</td>
+		        <td><input type="text" name="Profit" size="30" maxlength="40"  value=""> </td>
+	        </tr>
+       </table>
+            <br>
+<br>
+
+<input type="submit" name="search" id="button">
+
+<input type="reset" value="Reset" 
+style="background-color:cornflowerblue; 
+		color: white" />
+<button onclick="UpdateData()">Update Data</button>
+
+</form>
+</body>
+</html>

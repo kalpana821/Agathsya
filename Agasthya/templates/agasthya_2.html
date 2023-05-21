@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/aga.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Results</h1>
+
+    <div class="center">
+        <center><table border="1"></center>
+
+            <tr>
+                
+                <th>client_name</th>
+                <th>contact</th>
+                <th>Service_Enquired</th>
+                <th>Location</th>
+                <th>Building_Apartment_Name</th>
+                <th>Date_of_Enquiry</th>
+                <th>Estimated_Quote</th>
+                <th>Invoice_Amount</th>
+                <th>Profit</th>
+               
+            </tr>
+    {% for item in data %}
+    <tr>
+                <td> {{item[0]}} </td>
+                <td>{{item[1]}}</td>
+                <td>{{item[2]}} </td>
+                <td>{{item[3]}} </td>
+                <td>{{item[4]}} </td>
+                <td>{{item[5]}} </td>
+                <td>{{item[6]}} </td>
+                <td>{{item[7]}} </td>
+                <td>{{item[8]}} </td>
+    
+    </tr>
+    {% endfor %}
+</body>
+</html>
